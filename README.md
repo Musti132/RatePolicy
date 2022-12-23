@@ -3,7 +3,8 @@
 
 ### Description
 This package is made for fun, it doesn't really have any useability, as this was more for learning how to create packages for Laravel specifically.
-It creates Rate limits for controllers like you would make Policies in laravel, it does this by User IP
+It creates Rate limits for controllers like you would make Policies in laravel, it does this by User IP.
+Also makes it easier to handle ratelimitting for controllers.
 
 ### Installation
 Install via composer 
