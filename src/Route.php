@@ -25,4 +25,9 @@ class Route
     {
         return $this->route->getAction();
     }
+
+    public function resolveRouteControllerName()
+    {
+        return class_basename($this->route->getControllerClass());
+    }
 }

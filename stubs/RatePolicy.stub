@@ -1,8 +1,12 @@
 <?php
 namespace $CLASS_NAMESPACE$;
 
-class $CLASS_NAME$
+use Musti\RatePolicy\RateLimits;
+
+class $CLASS_NAME$ extends RateLimits
 {
+    protected $controller = Controller::class;
+
     public function __construct()
     {
         

@@ -127,7 +127,7 @@ class RatePolicyCommand extends Command
         $namespace = $this->getNamespace();
 
         return [
-            'CLASS_NAME'        => $name . 'RatePolicy',
+            'CLASS_NAME'        => $name,
             'CLASS_NAMESPACE'   => $namespace,
         ];
     }
@@ -168,7 +168,7 @@ class RatePolicyCommand extends Command
      */
     public function getSourceFilePath()
     {
-        return base_path('app/RatePolicies') . '/' . $this->getPathAndFile() . 'RatePolicy.php';
+        return base_path('app/RatePolicies') . '/' . $this->getPathAndFile() . '.php';
     }
 
     /**
