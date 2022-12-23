@@ -8,7 +8,11 @@ It creates Rate limits for controllers like you would make Policies in laravel, 
 ### Installation
 Package hasn't been added to packagist yet.
 
-Install via composer `composer require musti/rate-policy`.
+Install via composer 
+
+```bash
+ composer require musti/rate-policy
+ ```
 
 ### Usage
 
@@ -24,7 +28,10 @@ class Controller extends BaseController
 
 ```
 
-Then create a policy via the command `php artisan make:rate-policy {name}`
+Then create a policy via the command 
+```bash
+ php artisan make:rate-policy {name}
+```
 This will create a RatePolicy under app/RatePolicies
 
 Remember to change `protected $controller = Controller::class;` to desired controller
