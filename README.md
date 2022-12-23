@@ -71,7 +71,8 @@ class ChannelRatePolicy extends RateLimits
 }
 
 ```
-The method should contain
+The method has to return a response.
+
 By default the max attempts is set to 10
 
 To change the max attempts, simply add a $maxAttempts property to the RatePolicy
