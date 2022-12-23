@@ -1,11 +1,9 @@
 # RatePolicy
 [![Generic badge](https://img.shields.io/badge/PHP-7.4%2B-green.svg)](#)
 
-###Description
+### Description
 This package is made for fun, it doesn't really have any useability, as this was more for learning how to create packages for Laravel specifically.
-It creates Rate limits for controllers like you would make Policies in laravel.
-
-Route model binding does not work on the RatePolicy
+It creates Rate limits for controllers like you would make Policies in laravel, it does this by User IP
 
 ### Installation
 Package hasn't been added to packagist yet.
@@ -51,21 +49,24 @@ In the RatePolicy that you have created you can add a method for the controller 
 <?php
 namespace App\RatePolicies;
 
+use App\Http\Controllers\ChannelController;
 use Musti\RatePolicy\RateLimits;
 
 class ChannelRatePolicy extends RateLimits
 {
-    protected $controller = Controller::class;
+    protected $controller = ChannelController::class;
 
-    public function viewAny(){
+    protected function message() {
+        //Do something
+
         return response()->json([
             'message' => 'Too many requests',
         ], 429);
-
-        //Do something else
     }
 }
+
 ```
+The method should contain
 By default the max attempts is set to 10
 
 To change the max attempts, simply add a $maxAttempts property to the RatePolicy

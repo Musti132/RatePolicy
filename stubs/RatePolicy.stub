@@ -7,7 +7,7 @@ class $CLASS_NAME$ extends RateLimits
 {
     protected $controller = Controller::class;
 
-    public function __construct()
+    protected function view()
     {
         
     }
