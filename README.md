@@ -6,8 +6,6 @@ This package is made for fun, it doesn't really have any useability, as this was
 It creates Rate limits for controllers like you would make Policies in laravel, it does this by User IP
 
 ### Installation
-Package hasn't been added to packagist yet.
-
 Install via composer 
 
 ```bash
