@@ -1,6 +1,6 @@
 <?php
 
-namespace Musti\RatePolicy\Providers;
+namespace Musti\RatePolicy\Provider;
 
 use Illuminate\Support\ServiceProvider;
 use Musti\RatePolicy\Console\Commands\RatePolicyCommand;
