@@ -85,7 +85,7 @@ You can also change the max attempts for a specific method by providing a $rateL
 
 ```php
     protected $rateLimitForMethods = [
-        'viewAny' => 15, //index method is automatically translated to viewAny
+        'index' => 15, //index method is automatically translated to viewAny
         'store' => 5,
     ];
 ```
