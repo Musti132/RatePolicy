@@ -1,0 +1,29 @@
+{
+    "name": "musti/rate-policy",
+    "description": "Laravel Rate Limit like Policies",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Musti\\RatePolicy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Musti",
+            "email": "44943708+Musti132@users.noreply.github.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Musti\\RatePolicy\\Provider\\RatePolicyProvider"
+            ],
+            "aliases": {
+                "RatePolicy": "Musti\\RatePolicy"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
