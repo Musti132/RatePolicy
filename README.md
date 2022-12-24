@@ -40,7 +40,7 @@ In any controller add this to the constructor
 ```php
 use Musti\RatePolicy\RatePolicy;
 
-class TestController extends Controller
+class ChannelController extends Controller
 {
     public function __construct(Request $request)
     {
