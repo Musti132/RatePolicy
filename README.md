@@ -1,5 +1,5 @@
 # RatePolicy
-[![Generic badge](https://img.shields.io/badge/PHP-7.4%2B-green.svg)](#)
+[![Generic badge](https://img.shields.io/badge/PHP-8.0%2B-green.svg)](#)
 
 ### Description
 This package is made for fun, it doesn't really have any useability, as this was more for learning how to create packages for Laravel specifically.
